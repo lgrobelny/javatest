@@ -1,9 +1,9 @@
-package com.company;
+package com.it.academy;
+
 
 import java.util.Scanner;
 
-public class Main {
-
+public class primitiveTypes {
     public static void main(String[] args) {
 
         System.out.println("   J    a   v     v  a");
@@ -17,12 +17,44 @@ public class Main {
         int age1 = scan.nextInt();
         scan.nextLine();
         System.out.println("Age of second person is?");
-        int age2 = scan.nextInt(); 
+        int age2 = scan.nextInt();
         scan.nextLine();
         System.out.println("Is person 1 a regular customer?");
         String is1RegularCustomer = scan.nextLine();
         System.out.println("Is person 1 a regular customer?");
         String is2RegularCustomer = scan.nextLine();
+        System.out.println("Let's check weekday while we're here. Type a number");
+        int odp = scan.nextInt();
+        scan.nextLine();
+        switch (odp){
+            case 1:
+                System.out.println("Poniedzialek");
+                break;
+            case 2:
+                System.out.println("Wtorek");
+                break;
+            case 3:
+                System.out.println("Sroda");
+                break;
+            case 4:
+                System.out.println("Czwaretk");
+                break;
+            case 5:
+                System.out.println("Piatek");
+                break;
+            case 6:
+                System.out.println("Sobota");
+                break;
+            case 7:
+                System.out.println("Niedzilea");
+                break;
+            default:
+                System.out.println("Wybrano zla wartosxc");
+
+        }
+        System.out.println("Fun fact. Age 1 would gie you a wheel with " + (2 * 3.14 * age1)+  " perimeter wheel");
+        System.out.println("Another fun fact, age 2 would gie you wheel with " + (3.14 * (age2 * age2)) + " area");
+
 
         boolean per1 = false;
         boolean per2;
